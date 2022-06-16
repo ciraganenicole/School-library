@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # rubocop:disable Style/CyclomaticComplexity
 require './book'
 require './person'
@@ -71,7 +72,7 @@ class Library
       print 'Specialization: '
       specialization = gets.chomp
 
-      teacher = Teacher.new(age: age, specialization: specialization, name: name)
+      teacher = Teacher.new(age: age, specialization: specialization, name: name, parent_permission: parent_permission)
       @people.push(teacher)
 
       puts "Person created successfuly\n"
