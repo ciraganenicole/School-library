@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 # rubocop:disable Style/CyclomaticComplexity
-require './book.rb'
-require './person.rb'
-require './teacher.rb'
-require './student.rb'
-require './rental.rb'
+require './book'
+require './person'
+require './teacher'
+require './student'
+require './rental'
 
 class Library
   def initialize
