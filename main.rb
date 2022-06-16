@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 # rubocop:disable Style/CyclomaticComplexity
 require './book'
 require './person'
