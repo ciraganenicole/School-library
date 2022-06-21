@@ -1,0 +1,16 @@
+[{
+        "type": "Students",
+        "name": "Candy",
+        "age": 13,
+        "classroom": "Math",
+        "permission": false
+
+    },
+    {
+        "type": "Teacher",
+        "name": "Robert",
+        "age": 34,
+        "specialization": "Chimie",
+        "permission": true
+    }
+]
