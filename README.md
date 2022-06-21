@@ -3,10 +3,13 @@
 ## Description
 
 > In this project we learned the basic concepts of the object oriented programming language using Ruby. We learned how to create classes, objects, and methods. we learned inheritance, and how to use modules, encapsulation,abstraction and polymorphism.
+We then refactored the code to make it SOLID.
 
 ## Built With
 
 - Ruby
+- VSCode
+- Rubocop linter
 
 ## Getting Started
 
@@ -19,12 +22,18 @@ Before starting the steps below, be sure you have [Git](https://www.linode.com/d
 
 ## Authors
 
-👤 **Author**
+👤 **Ciragane Nicole**
 
 - GitHub: [@ciraganenicole](https://github.com/ciraganenicole)
 - Twitter: [@CiraganeN](https://twitter.com/CiraganeN)
 - LinkedIn: [CiraganeNicole](https://linkedin.com/in/nicole-ciragane-19a3071bb)
 
+
+👤 **Moise Mulungu**
+
+- GitHub: [@moise-mulungu](https://github.com/moise-mulungu)
+- Twitter: [@moise_mulungu](https://twitter.com/moise_mulungu)
+- LinkedIn: [Moïse (Musa) Mulungu](https://www.linkedin.com/in/moisemulungu/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
