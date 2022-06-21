@@ -3,12 +3,14 @@ require './person'
 require './teacher'
 require './student'
 require './rental'
+require './data'
 
 class Library
   def initialize
-    @books = []
-    @people = []
-    @rentals = []
+    files
+    @books = books_loaded
+    @people = persons_loaded
+    @rentals = rentals_loaded
   end
 
   def list_all_books

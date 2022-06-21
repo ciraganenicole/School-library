@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 # rubocop:disable Style/CyclomaticComplexity
 require './app'
-
+require 'json'
+require './saved'
 def main
   puts "Welcome to Library App!\n\n "
   response = nil
