@@ -35,13 +35,13 @@ end
 all_persons
   end
 
-  def rentals_loaded(all_books, all_persons)
+  def rentals_loaded(books, persons)
     all_rentals = []
     saved_rentals = JSON.parse(File.read('./json/rental.json'))
     saved_rentals.each do |rental|
-      all_rentals << Rental.new(r['date'],
-                            all_books.select { |book| book.title == rental['title'] } [0],
-                            all_persons.select { |person| person.name == rental['name'] } [0])
+      all_rentals << Rental.new(rental['date'],
+                            books.select { |book| book.title == rental['title'] } [0],
+                            persons.select { |person| person.name == rental['name'] } [0])
     end
     all_rentals
   end
