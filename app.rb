@@ -10,7 +10,7 @@ class Library
     files
     @books = books_loaded
     @people = persons_loaded
-    @rentals = rentals_loaded(@books, @persons)
+    @rentals = []
   end
 
   def list_all_books
