@@ -28,7 +28,7 @@ class Library
     title = gets.chomp.capitalize
     print 'Author: '
     author = gets.chomp.capitalize
-    book = Book.new(title: title, author: author)
+    book = Book.new(title, author)
     @books << book
     puts "Book created successfully\n"
   end
@@ -60,7 +60,7 @@ class Library
       permission_resp = gets.chomp
       parent_permission = permission_resp.downcase == 'y'
 
-      student = Student.new(age: age, classroom: classroom, name: name, parent_permission: parent_permission)
+      student = Student.new(age, classroom, name, parent_permission: parent_permission)
       @people.push(student)
 
       puts "Person created successfuly\n"
@@ -72,7 +72,7 @@ class Library
       print 'Specialization: '
       specialization = gets.chomp
 
-      teacher = Teacher.new(age: age, specialization: specialization, name: name, parent_permission: parent_permission)
+      teacher = Teacher.new(age, specialization, name)
       @people.push(teacher)
 
       puts "Person created successfuly\n"
@@ -98,7 +98,7 @@ class Library
 
     puts 'Select a person by number'
     @people.each_with_index do |person, i|
-      print "#{i}) [#{person.class}] Name: #{person.name.capitalize}, ID: #{person.id}, Age: #{person.age}\n"
+      print "#{i}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}\n"
     end
 
     person_index = gets.chomp.to_i
@@ -108,7 +108,7 @@ class Library
 
     date = gets.chomp
 
-    rental = Rental.new(date: date, person: person, book: book)
+    rental = Rental.new(date, person, book)
     @rentals << rental
 
     puts "Rental created successfully\n"
