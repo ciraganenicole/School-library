@@ -26,18 +26,18 @@ def saved_persons(persons)
   all_persons = []
   persons.each do |person|
     all_persons << if person.instance_of? Student
-                      {
-                        json_class: 'Student',
-                        name: person.name,
-                        age: person.age,
-                        classroom: person.classroom,
-                        parent_permission: person.parent_permission
-                      }
-                    elsif person.instance_of? Teacher
-                      {
-                        json_class: 'Teacher', name: person.name, age: person.age, specialization: person.specialization
-                      }
-                    end
+                     {
+                       json_class: 'Student',
+                       name: person.name,
+                       age: person.age,
+                       classroom: person.classroom,
+                       parent_permission: person.parent_permission
+                     }
+                   elsif person.instance_of? Teacher
+                     {
+                       json_class: 'Teacher', name: person.name, age: person.age, specialization: person.specialization
+                     }
+                   end
   end
 
   ruby = JSON.generate(all_persons)
@@ -49,13 +49,13 @@ def saved_rentals(rentals)
   all_rentals = []
   rentals.each do |rental|
     all_rentals.push({
-                date: rental.date,
-                person_id: rental.person.id,
-                book_id: rental.book.id,
-                name: rental.person.name,
-                title: rental.book.title,
-                author: rental.book.author
-              })
+                       date: rental.date,
+                       person_id: rental.person.id,
+                       book_id: rental.book.id,
+                       name: rental.person.name,
+                       title: rental.book.title,
+                       author: rental.book.author
+                     })
   end
 
   ruby = JSON.generate(all_rentals)
