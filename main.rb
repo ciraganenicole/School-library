@@ -1,12 +1,20 @@
-#!/usr/bin/env ruby
 # rubocop:disable Style/CyclomaticComplexity
+require './book'
+require './person'
+require './teacher'
+require './student'
+require './rental'
 require './app'
 require 'json'
-require './saved'
+require 'pry'
+
 def main
   puts "Welcome to Library App!\n\n "
   response = nil
   app = Library.new
+  app.load_books
+  app.load_people
+  app.load_rentals
 
   while response != '7'
     puts 'Please choose an option below :'
@@ -28,7 +36,7 @@ def main
     when '2'
       app.list_all_people
     when '3'
-      app.create_person
+      app.person_create
     when '4'
       app.create_book
     when '5'
