@@ -17,7 +17,7 @@ Before starting the steps below, be sure you have [Git](https://www.linode.com/d
 
 1. Download the `Zip` or clone it with `git clone git@github.com:ciraganenicole/School-library.git`
 2. `cd School-Iibrary`
-3. Run: `bundle install`
+3. Run: `bundle install` Then `rspec spec` on your terminal
 
 ## Authors
 
