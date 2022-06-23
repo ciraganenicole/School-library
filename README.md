@@ -2,7 +2,7 @@
 
 ## Description
 
-> In this project we learned the basic concepts of the object oriented programming language using Ruby. We learned how to create classes, objects, and methods and, We implemented how to store data with the JSON.
+> On this milestone, We added unit tests for different files.
 
 ## Built With
 
