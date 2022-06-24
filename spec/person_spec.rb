@@ -43,12 +43,13 @@ describe 'should create instance of person class' do
     expect(person.validate_name).to eql 'Candy'
   end
 
-  it "The add_rental method returns a rental and adds its to the book" do
-    book = Book.new(title: "Title", author: "Author")
-    person = Person.new(age: 24, name: "Bob")
+  context 'When adding a new rental' do
+    it 'The add_rental method returns a rental and adds its to the person rental' do
+      person = Person.new(age: 17, name: 'Bob', parent_permission: true)
+      book = Book.new(title: 'Mind Prey', author: 'John Sandford')
 
-    rental = person.add_rental(date: "2021-05-04", book: book)
-
-    expect(person.rentals).to eql [rental]
+      person.add_rental('2022-03-05', book)
+      expect(person.rentals.length).to eql 1
+    end
   end
 end
